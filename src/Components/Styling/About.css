@@ -2,9 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #2F4F4F;
+    border: 5px inset #2a3b3b;
     grid-gap: 2em;
     align-items: flex-start;
-    margin: 50px 150px;
+    margin: 0 150px;
     padding: 50px 75px;
 }
 
@@ -20,4 +21,20 @@
     max-width: 80%;
     height: auto;
     border-radius: 45%;
+}
+
+.LanguageList {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.LanguageList li {
+    align-self: flex-start;
+}
+
+
+.LanguageList li::before {
+    content: '╘';
+    margin-right: 0.5em;
 }

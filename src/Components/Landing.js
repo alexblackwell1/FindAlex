@@ -1,36 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import TextLoop from "react-text-loop";
 import './Styling/TextFormat.css';
 import './Styling/Landing.css';
 
 function Landing() {
-    const [words] = useState([
-        'Based in Wake Forest, NC',
-        'Avid Board Game Collector',
-        'Seeker of Quidditch'
-    ]); // list of words
-    const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    const [playAnimation, setPlayAnimation] = useState(false);
-
-    useEffect(() => {
-        setPlayAnimation(true);
-        const interval = setInterval(() => {
-            setCurrentWordIndex(currentWordIndex => (currentWordIndex + 1) % words.length);
-        }, 4000); // change word every 2 seconds
-    
-        return () => clearInterval(interval);
-    }, [words.length]);
-
-    const staticText = '';
-    const fadingWord = words[currentWordIndex];
-    const text = staticText + fadingWord;
-
     return (
         <div className="Landing textPrimary">
             <div className="constrainedBox">
                 <h1>
-                Hello there, I'm<span style={{ color: "#2589bd" }}> Alex</span>
+                    Hello there, I'm<span style={{ color: "#2589bd" }}> Alex</span>
                 </h1>
-                <p className={playAnimation ? 'fade-down' : ''}>{text}</p>
+                <TextLoop
+                    interval={4000}
+                    springConfig={{ stiffness: 100, damping: 10 }}
+                >
+                    <p>Full-Stack Developer for AthleteX</p>
+                    <p>Avid Board Game Collector</p>
+                    <p>Based in Wake Forest, NC</p>
+                    <p>Seeker of Quidditch</p>
+                    <p>Appalachian State University Graduate</p>
+                    <p>StarFleet Captain</p>
+                </TextLoop>
             </div>
         </div>
     );

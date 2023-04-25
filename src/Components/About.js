@@ -29,6 +29,17 @@ function About() {
                     Playing around with new innovations is always inspiring to see the direction that technology is headed in.
                     I have dabbled in <i>Cloud Computing</i> and <i>Decentralized Environments</i>.
                 </p>
+                <p>
+                    <b>Java</b> has been my primary language while in study, but my expirence extends beyond that.
+                    Here is a list of <i>some</i> of the other languages I have found myself using:
+                </p>
+                <ul className="LanguageList">
+                    <li>C#</li>
+                    <li>Dart</li>
+                    <li>C/C++</li>
+                    <li>Haskell</li>
+                    <li>Javascript</li>
+                </ul>
             </div>
         </div>
     );
