@@ -21,6 +21,7 @@ function Navigation(fixed) {
                 <ul>
                     <li className="NavButton" onClick={handleClick_home}>Home</li>
                     <li className="NavButton">About</li>
+                    <li className="NavButton">Projects</li>
                     <li className="NavButton">Resume</li>
                 </ul>
             </nav>

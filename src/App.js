@@ -21,9 +21,9 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-console.log(showNav)
+  
   return (
-    <div>
+    <div className="background">
       <Landing />
       <Navigation isFixedLocation={showNav}/>
       <About />
