@@ -1,0 +1,37 @@
+.Fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.Navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 150px;
+    background-color: #2f4f4f;
+}
+
+.NavButton {
+    display: inline-block;
+    padding: 6px 12px;
+    /* background-color: darkcyan; */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.NavButton:hover {
+    background-color: darkcyan;
+    color: cyan;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}

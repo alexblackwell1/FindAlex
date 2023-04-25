@@ -1,0 +1,22 @@
+.AboutPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #132B2B;
+    grid-gap: 2em;
+    align-items: flex-start;
+    padding: 50px 150px;
+}
+
+.AboutImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutImage img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 45%;
+}
+
