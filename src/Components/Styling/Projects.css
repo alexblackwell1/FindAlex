@@ -1,0 +1,22 @@
+.ProjectsPage {
+    display: flex;
+    flex-direction: column;
+    background-color: #2F4F4F;
+    border: 5px inset #2a3b3b;
+    align-items: flex-start;
+    margin: 0 150px;
+    padding: 50px 75px;
+}
+
+.Project {
+    width: 100%;
+}
+
+.pageBreak {
+    border: none;
+    height: 2px;
+    width: 75%;
+    /* background-image: linear-gradient(to right, #187795, #CDC6AE, #187795); */
+    background-color: #CDC6AE;
+}
+

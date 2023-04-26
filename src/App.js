@@ -27,7 +27,7 @@ function App() {
         <div className="background">
             <Landing />
             <Navigation isFixedLocation={showNav}/>
-            <Empty size={showNav ? 140 : 75}/>
+            <Empty size={showNav ? 65 : 0}/>
             <About />
             <Projects />
             <Empty size={50}/>
