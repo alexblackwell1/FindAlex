@@ -17,8 +17,8 @@
   bottom: 0;
   background-image: url("/public/assets/axBackground.jpeg");
   background-size: cover;
-  background-position: left;
-  width: 105%;
+  background-position: center;
+  /* width: 125%; */
   filter: blur(12px);
   z-index: -1;
 }
