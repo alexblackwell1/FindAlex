@@ -1,8 +1,6 @@
 .AboutPage {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #2F4F4F;
-    border: 5px inset #2a3b3b;
     grid-gap: 2em;
     align-items: flex-start;
     margin: 75px 150px;

@@ -2,13 +2,9 @@ import './Styling/TextFormat.css';
 import './Styling/Projects.css'
 import React from 'react';
 
-function Project({ title, image, description }) {
+function Project({ githubLink }) {
   return (
     <div className="Project textDefault">
-        <hr className="pageBreak" />
-        <h2>{title}</h2>
-        <img src={image} alt={title} />
-        <div className="description">{description}</div>
     </div>
   );
 }

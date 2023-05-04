@@ -11,8 +11,8 @@
     align-items: center;
     height: 60px;
     padding: 0 150px;
-    background-color: #2f4f4f;
-    border: 5px inset #2a3b3b;
+    background-color: #242424e7;
+    backdrop-filter: blur(2px);
 }
 
 .NavButton {

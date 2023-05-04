@@ -29,6 +29,7 @@ function App() {
             <Navigation isFixedLocation={showNav}/>
             <Empty size={showNav ? 65 : 0}/>
             <About />
+            <Divider />
             <Projects />
             <Empty size={50}/>
         </div>
@@ -45,6 +46,14 @@ function Empty(height) {
         <div style={{
             height: formatHeight}}
         >
+        </div>
+    );
+}
+
+function Divider() {
+    return (
+        <div class="h-divider">
+            <div class="shadow"></div>
         </div>
     );
 }
