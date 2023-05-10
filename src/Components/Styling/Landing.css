@@ -84,7 +84,7 @@
   .rain {
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 95%;
     height: 100%;
     z-index: 2;
   }
