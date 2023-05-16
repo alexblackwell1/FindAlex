@@ -5,6 +5,9 @@
     align-items: flex-start;
     margin: 75px 150px;
     padding: 50px 75px;
+    background-color: rgba(69, 98, 124, 0.137);  
+    backdrop-filter: blur(5px);
+    border-radius: 5px 150px;
 }
 
 .AboutImage {

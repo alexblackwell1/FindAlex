@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import TextLoop from "react-text-loop";
-import $ from 'jquery';
+// import $ from 'jquery';
 import './Styling/TextFormat.css';
 import './Styling/Landing.css';
 
 function Landing() {
   useEffect(() => {
-    makeItRain();
+    // makeItRain();
 
     const timeout = setTimeout(() => {
       const scrollDiv = document.createElement("div");
@@ -30,35 +30,35 @@ function Landing() {
     return () => clearTimeout(timeout);
   }, []);
 
-  var makeItRain = function() {
-    //clear out everything
-    $('.rain').empty();
+  // var makeItRain = function() {
+  //   //clear out everything
+  //   $('.rain').empty();
   
-    var increment = 0;
-    var drops = "";
-    var backDrops = "";
+  //   var increment = 0;
+  //   var drops = "";
+  //   var backDrops = "";
   
-    while (increment < 100) {
-      //couple random numbers to use for various randomizations
-      //random number between 98 and 1
-      var randoHundo = (Math.floor(Math.random() * 98 + 1));
-      //random number between 5 and 2
-      var randoFiver = (Math.floor(Math.random() * 4 + 2));
-      //increment
-      increment += randoFiver;
-      //add in a new raindrop with various randomizations to certain CSS properties
-      drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver + 200) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" ></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
-      backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver + 92) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
-    }
+  //   while (increment < 100) {
+  //     //couple random numbers to use for various randomizations
+  //     //random number between 98 and 1
+  //     var randoHundo = (Math.floor(Math.random() * 98 + 1));
+  //     //random number between 5 and 2
+  //     var randoFiver = (Math.floor(Math.random() * 4 + 2));
+  //     //increment
+  //     increment += randoFiver;
+  //     //add in a new raindrop with various randomizations to certain CSS properties
+  //     drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver + 200) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" ></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+  //     backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver + 92) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+  //   }
   
-    $('.rain.front-row').append(drops);
-    $('.rain.back-row').append(backDrops);
-  }
+  //   $('.rain.front-row').append(drops);
+  //   $('.rain.back-row').append(backDrops);
+  // }
 
   return (
-    <body class="back-row-toggle splat-toggle">
-      <div class="rain front-row"></div>
-      <div class="rain back-row"></div>
+    // <body class="back-row-toggle splat-toggle">
+    //   <div class="rain front-row"></div>
+    //   <div class="rain back-row"></div>
       <div className="Landing textPrimary">
         <div className="constrainedBox">
           <h1>
@@ -74,7 +74,7 @@ function Landing() {
           </TextLoop>
         </div>
       </div>
-    </body>
+    // </body>
   );
 }
 
