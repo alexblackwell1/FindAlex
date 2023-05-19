@@ -1,0 +1,12 @@
+.app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(155deg, darkcyan 0 15%, black 55% 100%);
+}
+
+p {
+    font-size: 20px;
+}

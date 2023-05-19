@@ -1,59 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import Landing from './Components/Landing';
-import Navigation from './Components/Navigation';
-import About from './Components/About';
-import Projects from './Components/Projects';
+import React from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Landing from './components/Landing.js';
+import About from './components/About.js';
+import Projects from './components/Projects.js';
+import Resume from './components/Resume.js';
+import './styling/default.css';
 
 function App() {
-    const [showNav, setShowNav] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > window.innerHeight) {
-                setShowNav(true);
-            } else {
-                setShowNav(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-  
     return (
-        <div className="background">
-            <Landing />
-            <Navigation isFixedLocation={showNav}/>
-            <Empty size={showNav ? 65 : 0}/>
-            <About />
-            <Divider />
-            <Projects />
-            <Empty size={50}/>
-        </div>
+        <Router>
+            <Routes>
+                <Route path='/' element={
+                    <div className="app">
+                        <Landing />
+                    </div>
+                }/>
+                <Route path='about' element={<About />}/>
+                <Route path='projects' element={<Projects />}/>
+                <Route path='resume' element={<Resume />}/>
+            </Routes>
+        </Router>
     );
 }
 
 export default App;
 
-function Empty(height) {
-    const { size } = height;
-    const formatHeight = size + "px";
-    
-    return (
-        <div style={{
-            height: formatHeight}}
-        >
-        </div>
-    );
-}
-
-function Divider() {
-    return (
-        <div class="h-divider">
-            <div class="shadow"></div>
-        </div>
-    );
-}
