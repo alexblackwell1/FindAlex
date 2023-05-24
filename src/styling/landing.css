@@ -3,6 +3,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(155deg, darkcyan 0 15%, black 55% 100%);
 }  
 
 .landing-header {

@@ -1,0 +1,124 @@
+.projects-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(170deg, darkcyan 0 18%, black 20% 100%);
+}  
+
+.projects-title {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+    gap: 30px;
+    background-color: black;
+    text-decoration: none;
+    color: darkcyan;
+    margin-top: 30px;
+    margin-right: 100px;
+    padding: 0 30px;
+    border-radius: 0 50px 50px 0; 
+}
+
+.projects-return {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+.projects-return:hover {
+    user-select: none;
+    color: white;
+}
+
+.projects-horiz-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    width: 70%;
+    height: 50%
+}
+
+.projects-arrow {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100px;
+    align-content: flex-start;
+    padding: 0 10px;
+    user-select: none;
+}
+
+.projects-arrow-left {
+    text-align: left;
+    border-left: 3px solid grey;
+    border-radius: 40px 0 0 40px;
+}
+
+.projects-arrow-right {
+    text-align: right;
+    border-right: 3px solid grey;
+    border-radius: 0 40px 40px 0;
+}
+
+.projects-arrow-left:hover {
+    background: linear-gradient(90deg, grey, transparent);
+    color: cyan;
+    border-left: 3px solid cyan;
+}
+
+.projects-arrow-right:hover {
+    background: linear-gradient(-90deg, grey, transparent);
+    color: cyan;
+    border-right: 3px solid cyan;
+}
+
+.projects-list-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    background-color: silver;
+    border-radius: 10px;
+}
+
+.projects-read-more {
+    background-color: darkcyan;
+    color: black;
+    width: 700px;
+    margin-left: auto;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    border-radius: 50px 0 0 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    margin: 0 30px;
+    justify-content: space-between;
+    color: black;
+    border: solid 1px green;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-image {
+    max-width: 300px;
+    max-height: auto;
+    margin-left: auto;
+}
