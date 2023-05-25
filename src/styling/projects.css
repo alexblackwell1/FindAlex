@@ -3,14 +3,14 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    
+
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: linear-gradient(170deg, darkcyan 0 18%, black 20% 100%);
-}  
+}
 
 .projects-title {
     display: flex;
@@ -23,17 +23,7 @@
     margin-top: 30px;
     margin-right: 100px;
     padding: 0 30px;
-    border-radius: 0 50px 50px 0; 
-}
-
-.projects-return {
-    color: darkcyan;
-    text-decoration: none;
-}
-
-.projects-return:hover {
-    user-select: none;
-    color: white;
+    border-radius: 0 50px 50px 0;
 }
 
 .projects-horiz-list {
@@ -86,7 +76,7 @@
     align-items: center;
     width: 70%;
     height: 100%;
-    background-color: silver;
+    /* background-color: silver; */
     border-radius: 10px;
 }
 
@@ -105,20 +95,53 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    /* height: 90%; */
     width: 100%;
     margin: 0 30px;
+    padding: 0 30px 30px;
+    justify-content: space-around;
+    color: darkcyan;
+    border: groove 3px darkcyan;
+}
+
+.card-title-row {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
     justify-content: space-between;
-    color: black;
-    border: solid 1px green;
 }
 
 .card-title {
-    text-align: center;
+    text-decoration: underline;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
 }
 
 .card-image {
-    max-width: 300px;
-    max-height: auto;
-    margin-left: auto;
+    max-height: 10%;
+    max-width: 50%;
+    object-fit: contain; /* Adjust the object-fit value based on your desired image display */
+}
+
+.card-text {
+    margin: 0 30px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+/* Customize the scrollbar */
+.card-text::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+  }
+  
+.card-text::-webkit-scrollbar-thumb {
+    background-color: darkcyan; /* Set the color of the scrollbar thumb */
+    border-radius: 10px; /* Set the border radius of the scrollbar thumb */
+}
+
+.card-text::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the background color of the scrollbar track */
 }

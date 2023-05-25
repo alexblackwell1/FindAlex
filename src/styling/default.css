@@ -1,3 +1,13 @@
 p {
     font-size: 20px;
 }
+
+.return {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+.return:hover {
+    user-select: none;
+    color: white;
+}
