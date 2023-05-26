@@ -26,7 +26,26 @@
 .resume-body {
     height: 80%;
     width: 800px;
-    margin: auto;
-    background-color: silver;
+    margin: 0 auto auto;
 }
 
+.pdf-container {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.pdf-container::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.pdf-container::-webkit-scrollbar-thumb {
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+
+.pdf-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  

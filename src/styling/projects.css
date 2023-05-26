@@ -132,16 +132,16 @@
     overflow-y: scroll;
 }
 
-/* Customize the scrollbar */
+
 .card-text::-webkit-scrollbar {
-    width: 8px; /* Set the width of the scrollbar */
-  }
+    width: 8px;
+}
   
 .card-text::-webkit-scrollbar-thumb {
-    background-color: darkcyan; /* Set the color of the scrollbar thumb */
-    border-radius: 10px; /* Set the border radius of the scrollbar thumb */
+    background-color: darkcyan;
+    border-radius: 10px;
 }
 
 .card-text::-webkit-scrollbar-track {
-    background-color: transparent; /* Set the background color of the scrollbar track */
+    background-color: transparent;
 }
