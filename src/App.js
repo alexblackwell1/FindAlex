@@ -1,9 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './components/Landing.js';
-import About from './components/About.js';
-import Projects from './components/Projects.js';
-import Resume from './components/Resume.js';
+import Landing from './Components/Landing.js';
+import About from './Components/About.js';
+import Projects from './Components/Projects.js';
+import Resume from './Components/Resume.js';
 import './styling/default.css';
 
 function App() {
