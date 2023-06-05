@@ -1,28 +1,3 @@
-.resume-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-
-    background: repeating-linear-gradient(145deg, black 0 20.7%, darkcyan 21% 24%, black 25% 26%);
-}
-
-.resume-title {
-    display: flex;
-    flex-direction: row;
-    max-width: 300px;
-    gap: 30px;
-    background-color: black;
-    text-decoration: none;
-    color: darkcyan;
-    margin-top: 30px;
-    margin-right: 100px;
-    padding: 0 30px;
-    border-radius: 0 50px 50px 0;
-    border: solid 3px darkcyan;
-    border-left: none;
-}
-
 .resume-body {
     height: 80%;
     width: 800px;

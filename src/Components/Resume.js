@@ -15,8 +15,8 @@ function Resume() {
       };
 
     return (
-      <div className="resume-page">
-            <div className="resume-title">
+      <div className="page">
+            <div className="title">
                 <Link to="/" className="return">
                     <h1>◄</h1>
                 </Link>

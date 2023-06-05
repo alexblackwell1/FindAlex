@@ -1,3 +1,23 @@
-.about-page {
-    height: 100vh;
+.about-body {
+    height: 65%;
+    width: 60%;
+    margin: auto;
+    border: 1px solid black;
+    outline: 1px solid darkcyan;
+    color: darkcyan;
+    padding: 30px 50px;
+    overflow-y: scroll;
+}
+
+.about-body::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.about-body::-webkit-scrollbar-thumb {
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+
+.about-body::-webkit-scrollbar-track {
+    background-color: transparent;
 }

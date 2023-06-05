@@ -7,8 +7,8 @@ import './projects/LaptopCart.js';
 
 function Projects() {
     return (
-        <div className='projects-page'>
-            <div className='projects-title'>
+        <div className='page'>
+            <div className='title'>
                 <Link to='/' className='return'><h1>◄</h1></Link>
                 <h1>Projects</h1>
             </div>
