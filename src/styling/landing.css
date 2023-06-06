@@ -1,23 +1,26 @@
-.landing-page {
+.landing-top {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(155deg, darkcyan 0 15%, black 55% 100%);
-}  
+    height: 425px;
+    justify-content: space-between;
+}
+
+.landing-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
 
 .landing-header {
     text-align: right;
     padding: 15px 50px;
     max-width: 600px;
+    margin: 100px 0;
     border-radius: 0 60px 60px 0;
-    background-color: black;
+    border-right: 1px solid darkcyan;
+    border-bottom: 8px solid darkcyan;
     color: darkcyan;
 }
 
@@ -31,18 +34,7 @@
     color: black;
 }
 
-.landing-btn-trio {
-    margin: 0 auto;
-    height: 200px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-}
-
-.landing-btn-row {
+.landing-page-btn-row {
     display: flex;
     flex-direction: row;
     width: 500px;
@@ -51,15 +43,34 @@
     justify-content: space-between;
 }
 
-.landing-btn {
+.landing-page-btn {
     text-decoration: none;
     color: darkcyan;
     height: 60px;
-    border-top: darkcyan 1px dashed;
+    border-top: 3px darkcyan solid;
     border-radius: 20px 20px 0 0;
 }
 
-.landing-btn:hover {
+.landing-page-btn:hover {
     color: white;
-    border-bottom: darkcyan 3px groove;
+    border-bottom: 3px darkcyan groove;
+}
+
+.landing-link-btn-row {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.landing-link-btn {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+.landing-image {
+    height: 35px;
+    width: auto;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 import { Link } from 'react-router-dom';
+import github from '../styling/assets/github-mark-white.png'
+import linkedin from '../styling/assets/LI-In-Bug.png'
 import '../styling/landing.css';
 
 function Landing() {
@@ -25,18 +27,28 @@ function Landing() {
     }, []);
 
     return (
-        <div className='landing-page'>
-            <div className='landing-header'>
-                <h1>Hello World, I'm Alex!</h1>
+        <div className='page'>
+            <div className='landing-top'>
+                <div className='landing-header'>
+                    <h1>Hello World, I'm Alex!</h1>
+                </div>
+                <p className='landing-description'>
+                    <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
+                </p>
             </div>
-            <p className='landing-description'>
-                <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
-            </p>
-            <div className='landing-btn-trio'>
-                <Link to='/about' className='landing-btn'><p>About Me</p></Link>
-                <div className='landing-btn-row'>
-                    <Link to='/projects' className='landing-btn'><p>Projects</p></Link>
-                    <Link to='/resume' className='landing-btn'><p>Resume</p></Link>
+            <div className='landing-bottom'>
+                <div className='landing-page-btn-row'>
+                    <Link to='/projects' className='landing-page-btn'><p>Projects</p></Link>
+                    <Link to='/about' className='landing-page-btn'><p>About Me</p></Link>
+                </div>
+                <div className='landing-link-btn-row'>
+                    <Link to='/resume' className='landing-link-btn'><p>Resume</p></Link>
+                    <Link to='https://github.com/alexblackwell1' className='landing-link-btn'>
+                        <img className='landing-image' src={github} alt='github account' />
+                    </Link>
+                    <Link to='https://www.linkedin.com/in/agbwell/' className='landing-link-btn'>
+                        <img className='landing-image' src={linkedin} alt='linkedin account' />
+                    </Link>
                 </div>
             </div>
         </div>
