@@ -1,26 +1,26 @@
 .resume-body {
-    height: 80%;
-    width: 800px;
-    margin: 0 auto auto;
+    margin: 50px auto;
+    user-select: none;
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
 }
 
-.pdf-container {
-    max-height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    overflow-y: scroll;
+.resume-download {
+    height: 70px;
+    width: 200px;
+    margin: 50px auto;
+    border-right: 1px solid darkcyan;
+    border-bottom: 8px solid darkcyan;
+    border-radius: 0 50px 0;
+    color: darkcyan;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
-.pdf-container::-webkit-scrollbar {
-    width: 8px;
+.resume-download:hover {
+    border-right: 1px solid white;
+    border-bottom: 8px solid white;
+    color: white;
+    user-select: none;
 }
-  
-.pdf-container::-webkit-scrollbar-thumb {
-    background-color: darkcyan;
-    border-radius: 10px;
-}
-
-.pdf-container::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-  

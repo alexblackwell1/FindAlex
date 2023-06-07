@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Document, Page, pdfjs } from "react-pdf";
-import resume from '../styling/assets/resume.pdf';
+import resumePDF from '../styling/assets/resume.pdf';
+import resumeIMG from '../styling/assets/resume.png'
 import '../styling/default.css';
 import '../styling/resume.css';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function Resume() {
-    const handleScroll = (e) => {
-        const container = e.target;
-        if (container.scrollTop + container.offsetHeight >= container.scrollHeight) {
-          container.scrollTop = container.scrollHeight - container.offsetHeight;
-        }
-      };
+    const downloadPDF = () => {
+        fetch(resumePDF).then(response => {
+            response.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Alex_Blackwell_resume.pdf';
+                alink.click();
+            });
+        });
+    };
+      
 
     return (
       <div className="page">
@@ -22,12 +27,9 @@ function Resume() {
                 </Link>
                 <h1>Résumé</h1>
             </div>
-            <div className="resume-body">
-                <div className="pdf-container" onScroll={handleScroll}>
-                    <Document file={resume}>
-                        <Page pageNumber={1} renderTextLayer={false} width={800} />
-                    </Document>
-                </div>
+            <img className="resume-body" src={resumeIMG} alt='resume' />
+            <div className='resume-download' onClick={downloadPDF}>
+                <h2 className='resume-download-text'>Download</h2>
             </div>
       </div>
     );

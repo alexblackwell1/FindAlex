@@ -59,6 +59,7 @@
 .landing-link-btn-row {
     display: flex;
     flex-direction: row;
+    align-items: center;
     height: 35px;
     width: 50%;
     margin: 0 auto;
